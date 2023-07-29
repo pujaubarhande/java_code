@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ChefVariablesEquation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); // number of test cases
+
+        while (t-- > 0) {
+            long x = sc.nextLong(); // value of variable X
+            long y = sc.nextLong(); // value of variable Y
+
+            // Check if X^4 + 4*X^2*Y == 4*X^2*Y^2
+            if (x * x + 4 * x * x * y == 4 * x * x * y * y) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+
+        sc.close();
+    }
+}

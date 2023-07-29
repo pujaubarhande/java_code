@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ChefVariablesEquation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); // number of test cases
+
+        while (t-- > 0) {
+            long x = sc.nextLong(); // value of variable X
+            long y = sc.nextLong(); // value of variable Y
+
+            System.out.println((x * x + y == x * y) ? "YES" : "NO");
+        }
+
+        sc.close();
+    }
+}
